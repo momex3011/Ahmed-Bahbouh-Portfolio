@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Ahmed's software portfolio: full-stack civic systems, geospatial intelligence tools, AI assistants, media workflows, mobile apps, and product design."
+    >
+    <title>Ahmed Bahbouh | Software Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Skip to work</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Ahmed Bahbouh portfolio home">Ahmed Bahbouh</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#mobile">Mobile</a>
+        <a href="#skills">Skills</a>
+        <a href="#cv">CV Bullets</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true">
+          <img class="shot shot-map" src="assets/screenshots/war-tracker-map.png" alt="">
+          <img class="shot shot-civic" src="assets/screenshots/council-home.png" alt="">
+          <img class="shot shot-tool" src="assets/screenshots/video-converter.png" alt="">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">The message is in the medium</p>
+          <h1 id="hero-title">Ahmed Bahbouh</h1>
+          <p class="hero-copy">
+            I build useful software that looks and behaves like a product: civic
+            platforms, intelligence maps, AI assistants, media tools, mobile apps,
+            and automation systems.
+          </p>
+          <div class="hero-actions" aria-label="Portfolio actions">
+            <a class="button primary" href="#work">View selected work</a>
+            <a class="button secondary" href="#cv">Grab CV bullets</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="proof-strip" aria-label="Portfolio highlights">
+        <div>
+          <strong>17</strong>
+          <span>apps, tools, and games in the workspace</span>
+        </div>
+        <div>
+          <strong>5</strong>
+          <span>major product categories represented</span>
+        </div>
+        <div>
+          <strong>3</strong>
+          <span>platform styles: web, mobile, desktop</span>
+        </div>
+        <div>
+          <strong>2+</strong>
+          <span>localization tracks across civic portals</span>
+        </div>
+      </section>
+
+      <section class="intro band">
+        <div class="section-kicker">Positioning</div>
+        <div class="intro-grid">
+          <h2>Not just projects. Proof of range.</h2>
+          <p>
+            This page markets the way the work was built: real screenshots,
+            concrete systems, and evidence that you can move from UI to data,
+            from local prototypes to full-stack workflows, and from technical
+            features to public-facing products.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" class="work band" aria-labelledby="work-title">
+        <div class="section-heading">
+          <p class="section-kicker">Selected work</p>
+          <h2 id="work-title">Real apps I can point to.</h2>
+        </div>
+
+        <article class="case featured">
+          <div class="case-copy">
+            <p class="case-number">01</p>
+            <h3>Al-Nabk Civic Council Platform</h3>
+            <p>
+              This is where the civic platform started. I built the first
+              Al-Nabk system, then kept expanding it into the stronger version
+              it is now: a real portal for organizing projects, proposals,
+              donations, volunteers, users, and public updates.
+            </p>
+            <ul class="impact-list">
+              <li>Built the backend with Flask and SQLite, including users, roles, project tracking, voting, calendars, and admin tools.</li>
+              <li>Turned the idea into a complete civic portal with public pages, donation workflows, multilingual support, dashboards, and mobile-ready APIs.</li>
+              <li>Designed it around a practical goal: help council work become easier to manage and easier for residents to follow.</li>
+            </ul>
+            <div class="tag-row">
+              <span>Flask</span>
+              <span>SQLite</span>
+              <span>Auth</span>
+              <span>Flask-Babel</span>
+              <span>Public APIs</span>
+            </div>
+          </div>
+          <figure class="case-visual">
+            <img src="assets/screenshots/council-home.png" alt="Al-Nabk City Civil Council home dashboard showing projects, active items, votes, trackers, and service links.">
+            <figcaption>The current civic portal grew from the original Al-Nabk build.</figcaption>
+          </figure>
+        </article>
+
+        <div class="case-grid">
+          <article class="case">
+            <figure class="case-visual">
+              <img src="assets/screenshots/council-projects.png" alt="Civic project tracking page showing filters, project progress, status, and assigned tracker fields.">
+            </figure>
+            <div class="case-copy">
+              <p class="case-number">02</p>
+              <h3>Arlington Web + Mobile Civic Platform</h3>
+              <p>
+                I took the civic platform idea and built an Arlington version
+                with both a web portal and a mobile app. The important part is
+                that they are connected: the mobile app pulls from the same
+                backend data through JSON APIs, so updates stay consistent.
+              </p>
+              <div class="tag-row">
+                <span>Flask</span>
+                <span>Expo</span>
+                <span>React Native</span>
+                <span>JSON APIs</span>
+                <span>English/Spanish</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case">
+            <figure class="case-visual">
+              <img src="assets/screenshots/war-tracker-map.png" alt="War-Tracker map interface showing Syria, event feed, territory overlay, and tactical controls.">
+            </figure>
+            <div class="case-copy">
+              <p class="case-number">03</p>
+              <h3>War-Tracker</h3>
+              <p>
+                I built a conflict tracking platform that turns events,
+                factions, territories, dates, and sources into an interactive
+                map. It shows that I can work with messy data and still make
+                it usable through a clear interface.
+              </p>
+              <div class="tag-row">
+                <span>Flask</span>
+                <span>SQLAlchemy</span>
+                <span>Leaflet</span>
+                <span>GeoJSON</span>
+                <span>Data APIs</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case">
+            <figure class="case-visual">
+              <img src="assets/screenshots/video-converter.png" alt="RetroScale media converter interface showing GIF maker controls and conversion tool switcher.">
+            </figure>
+            <div class="case-copy">
+              <p class="case-number">04</p>
+              <h3>RetroScale Media Converter</h3>
+              <p>
+                I built this as a product-style media tool, not just a script.
+                The interface lets users choose a conversion workflow, understand
+                the setup, upload files, and move between formats like GIF, MP4,
+                WebM, MOV, WebP, APNG, and AVIF.
+              </p>
+              <div class="tag-row">
+                <span>Next.js</span>
+                <span>TypeScript</span>
+                <span>FastAPI</span>
+                <span>FFmpeg</span>
+                <span>Tailwind</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case">
+            <figure class="case-visual">
+              <img src="assets/screenshots/pokechat.png" alt="Pokeverse app home screen with links to Pokedex and PokeChat assistant.">
+            </figure>
+            <div class="case-copy">
+              <p class="case-number">05</p>
+              <h3>Pokechat AI Assistant</h3>
+              <p>
+                I connected a React frontend, Flask backend, Azure OpenAI, and
+                PokeAPI so a user can ask for Pokemon recommendations in plain
+                language and get structured results back as usable cards.
+              </p>
+              <div class="tag-row">
+                <span>React</span>
+                <span>Flask</span>
+                <span>Azure OpenAI</span>
+                <span>PokeAPI</span>
+                <span>REST</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="systems band" aria-labelledby="systems-title">
+        <div class="section-heading">
+          <p class="section-kicker">Additional work</p>
+          <h2 id="systems-title">Cross-platform engineering projects</h2>
+        </div>
+        <div class="systems-grid">
+          <article>
+            <h3>UTA CampusFlow</h3>
+            <p>Expo Router mobile app for campus life: Firebase auth, Firestore reports, campus widgets, map/reporting flows, leaderboards, and MavPoints.</p>
+          </article>
+          <article>
+            <h3>Website Maker</h3>
+            <p>Drag-and-drop website builder with Next.js, Zustand, DnD tooling, version history, Flask persistence, and published site output.</p>
+          </article>
+          <article>
+            <h3>Desktop Utilities</h3>
+            <p>Flag designer, folder organizer, Java Swing hospital records app, and socket chat client/server demonstrate practical GUI and systems work.</p>
+          </article>
+          <article>
+            <h3>Games</h3>
+            <p>Pong, Space Shooter, and Flappy-style arcade builds show event loops, collision logic, real-time input, scoring, and asset-driven gameplay.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="mobile" class="mobile band" aria-labelledby="mobile-title">
+        <div class="section-heading">
+          <p class="section-kicker">Mobile apps</p>
+          <h2 id="mobile-title">I can ship the product into someone&apos;s hand.</h2>
+        </div>
+        <div class="mobile-grid">
+          <article class="phone-card green-phone">
+            <div class="phone-shell" aria-hidden="true">
+              <div class="phone-status"></div>
+              <div class="mobile-app-top">
+                <img src="assets/mobile/alnabk-symbol.png" alt="">
+                <span>Al-Nabk Council</span>
+              </div>
+              <div class="mobile-screen-title">Civic Home</div>
+              <div class="mobile-stat-row">
+                <span>Projects</span>
+                <strong>Progress</strong>
+              </div>
+              <div class="mobile-list">
+                <span>Announcements</span>
+                <span>Proposals</span>
+                <span>Donations</span>
+                <span>Volunteer requests</span>
+              </div>
+            </div>
+            <div class="phone-copy">
+              <h3>Al-Nabk Council Mobile</h3>
+              <p>
+                Expo React Native app paired with the Flask civic portal through
+                JSON APIs, covering projects, proposals, donations, suggestions,
+                volunteer requests, news, useful links, and Arabic RTL support.
+              </p>
+              <div class="tag-row">
+                <span>Expo</span>
+                <span>React Native</span>
+                <span>REST APIs</span>
+                <span>Arabic RTL</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="phone-card blue-phone">
+            <div class="phone-shell" aria-hidden="true">
+              <div class="phone-status"></div>
+              <div class="mobile-app-top">
+                <img src="assets/mobile/arlington-civic-mark.png" alt="">
+                <span>Arlington Civic</span>
+              </div>
+              <div class="mobile-screen-title">Resident Portal</div>
+              <div class="mobile-stat-row">
+                <span>English</span>
+                <strong>Spanish</strong>
+              </div>
+              <div class="mobile-list">
+                <span>Project tracking</span>
+                <span>Donation pledges</span>
+                <span>Proposal voting</span>
+                <span>Role workspaces</span>
+              </div>
+            </div>
+            <div class="phone-copy">
+              <h3>Arlington Civic Mobile</h3>
+              <p>
+                Mobile resident experience for the Arlington council platform,
+                including localized English/Spanish flows and native screens
+                backed by the same project, donation, proposal, and suggestion APIs.
+              </p>
+              <div class="tag-row">
+                <span>Expo</span>
+                <span>React Native</span>
+                <span>Localization</span>
+                <span>WebView bridge</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="phone-card orange-phone">
+            <div class="phone-shell" aria-hidden="true">
+              <div class="phone-status"></div>
+              <div class="mobile-app-top">
+                <img src="assets/mobile/campusflow-icon.png" alt="">
+                <span>CampusFlow</span>
+              </div>
+              <div class="mobile-screen-title">UTA Activity</div>
+              <div class="mobile-stat-row">
+                <span>MavPoints</span>
+                <strong>Live reports</strong>
+              </div>
+              <div class="mobile-list">
+                <span>Bus and dining widgets</span>
+                <span>Gym and library status</span>
+                <span>Heat maps and surveys</span>
+                <span>Firebase auth</span>
+              </div>
+            </div>
+            <div class="phone-copy">
+              <h3>UTA CampusFlow</h3>
+              <p>
+                Campus-life Expo Router app with Firebase authentication,
+                Firestore-backed reporting, guest login, UTA email restrictions,
+                maps, activity widgets, leaderboards, and gamification.
+              </p>
+              <div class="tag-row">
+                <span>Expo Router</span>
+                <span>Firebase</span>
+                <span>Firestore</span>
+                <span>Maps</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills band" aria-labelledby="skills-title">
+        <div class="section-heading">
+          <p class="section-kicker">Skill map</p>
+          <h2 id="skills-title">What the portfolio proves</h2>
+        </div>
+        <div class="skill-layout">
+          <div class="skill-cluster">
+            <h3>Full-stack product engineering</h3>
+            <p>React, Next.js, TypeScript, Flask, FastAPI, REST APIs, auth flows, dashboards, CRUD systems, admin tools, and deployment-ready structure.</p>
+          </div>
+          <div class="skill-cluster">
+            <h3>Data and intelligence systems</h3>
+            <p>SQLite, SQLAlchemy, Firestore, ingestion scripts, Celery/Redis patterns, event models, territory snapshots, source reliability, and analytics.</p>
+          </div>
+          <div class="skill-cluster">
+            <h3>Interface and experience design</h3>
+            <p>Responsive web UI, mobile-first civic flows, dark tactical HUDs, builder workspaces, conversion tool layouts, and accessible public pages.</p>
+          </div>
+          <div class="skill-cluster">
+            <h3>AI and external APIs</h3>
+            <p>Azure OpenAI integration, prompt-to-structured-output workflows, PokeAPI, Firebase, geocoding, source scraping, and AI-assisted event analysis.</p>
+          </div>
+          <div class="skill-cluster">
+            <h3>Cross-platform development</h3>
+            <p>Expo React Native, Python desktop apps, Java Swing, Pygame, socket networking, file automation, and media processing pipelines.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cv" class="cv band" aria-labelledby="cv-title">
+        <div class="section-heading">
+          <p class="section-kicker">Professional summary</p>
+          <h2 id="cv-title">What I bring to a team</h2>
+        </div>
+        <div class="cv-grid">
+          <p>Built multilingual civic management portals with role-based dashboards, project tracking, proposal voting, donation workflows, public suggestions, and mobile API endpoints.</p>
+          <p>Developed a geospatial conflict intelligence platform using Flask, SQLAlchemy, Leaflet, GeoJSON, event feeds, faction models, and date-based territory snapshots.</p>
+          <p>Created a Next.js and FastAPI media conversion interface designed around FFmpeg workflows, chunked uploads, format switching, and future AI enhancement endpoints.</p>
+          <p>Integrated Azure OpenAI with a React/Flask assistant that converts natural language Pokemon requests into structured results displayed through external API data.</p>
+          <p>Designed mobile and desktop applications across Expo, React Native, Firebase, Tkinter, Java Swing, and Pygame, covering authentication, real-time interaction, automation, and local persistence.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Built as a portfolio page that demonstrates the work while describing it.</p>
+      <div class="footer-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#cv">CV</a>
+      </div>
+    </footer>
+  </body>
+</html>
